@@ -1,0 +1,126 @@
+body {
+     font-family: 'Outfit', sans-serif;
+     background-image: url('../images/fundo-base.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding: 60px 0;
+}
+.header h1 {
+    color: #f1ecff;
+    font-size: 45px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.character-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.characters-list{
+    width: 330px;
+    height: 520px;
+    position: relative;
+}
+.btn-arrow {
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.btn-arrow.btn-back{
+    transform: rotatey(180deg);
+
+}
+.btn-arrow:hover{
+    background-color: #8351fe;
+}
+.card {
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    padding: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    opacity: 0.3s ease-in-out;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+
+}
+.card.selected {
+    opacity: 1;
+    z-index: 1;
+
+}
+.card .character-image {
+    width: 100%;
+    max-height: 280px;
+    
+}
+.card .name {
+    background-color: rgba(179, 177, 185, 0.7);
+    padding: 8px 10x;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
+}
+.card .description {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+.card .description .tittle {
+    background-color: #333333;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 12px;
+
+}
+.card .description .text {   
+    font-size: 14;
+    padding: 12;
+    text-align: justify;
+    max-height: 110px;
+    overflow: auto;
+
+}
+.card.fundo-1 {
+    background: url(../images/fundo-1.jpg) no-repeat;
+   
+}
+.card.fundo-2 {
+    background-image: url(../images/fundo-2.jpg) no-repeat;
+    
+}.card.fundo-3 {
+    background-image: url(../images/fundo-3.jpg) no-repeat;
+    
+}.card.fundo-4 {
+    background-image: url(../images/fundo-4.jpg) no-repeat;
+    
+}.card.fundo-5 {
+    background-image: url(../images/fundo-5.jpg) no-repeat;
+    
+}.card.fundo-6 {
+    background-image: url(../images/fundo-6.jpg) no-repeat;
+    
+}
